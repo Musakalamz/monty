@@ -86,4 +86,13 @@ int short_stack_error(unsigned int line_number, char *op);
 int div_error(unsigned int line_number);
 int pchar_error(unsigned int line_number, char *message);
 
+/* Main Helpers */
+ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b);
+
+
+/* String functions */
+char *_strcpy(char *dest, const char *src);
+
 #endif /* __MONTY_H__ */
